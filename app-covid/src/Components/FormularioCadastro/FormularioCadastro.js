@@ -17,9 +17,9 @@ export default function FormularioCadastro() {
         genero: "",
         dispneia: "",
         febre: "",
-        tosse:"",
-        uti:"",
-        dorGarganta:"",
+        tosse: "",
+        uti: "",
+        dorGarganta: "",
     });
 
     const enviarDados = (e) => {
@@ -39,21 +39,21 @@ export default function FormularioCadastro() {
         //       text: (err.response.data.message),
         //     })
         //   });
-      };
+    };
     return (
         <Formulario onSubmit={enviarDados}>
             <div>
-                <label for="dataNotificacao">Data da notificação</label>
+                <p>Data da notificação</p>
                 <input name={"dataNotificacao"} type="date" value={form.dataNotificacao} onChange={onChangeForm} required />
-                <label for="dataPrimeirosSintomas">Data dos primeiros sintomas</label>
+                <p >Data dos primeiros sintomas</p>
                 <input name={"dataPrimeirosSintomas"} type="date" value={form.dataPrimeirosSintomas} onChange={onChangeForm} required />
-                <label for="dataTeste">Data do teste</label>
+                <p >Data do teste</p>
                 <input name={"dataTeste"} type="date" value={form.dataTeste} onChange={onChangeForm} required />
-                <label for="dataObito">Data do óbito</label>
-                <input name={"dataObito"} type="date" value={form.dataObito} onChange={onChangeForm} />
-                <label for="dataNascimento">Data do teste</label>
+                <p>Data de nascimento</p>
                 <input name={"dataNascimento"} type='date' value={form.dataNascimento} onChange={onChangeForm} required />
-                <label for="faixaEtaria">Faixa Etária</label>
+                <p>Data do óbito</p>
+                <input name={"dataObito"} type="date" value={form.dataObito} onChange={onChangeForm} />
+                <p>Faixa Etária</p>
                 <select name={"faixaEtaria"} value={form.faixaEtaria} onChange={onChangeForm} required>
                     <option value=""></option>
                     <option value="0 a 9 anos">0 a 9 anos</option>
@@ -68,43 +68,43 @@ export default function FormularioCadastro() {
                     <option value="90 a 99 anos">90 a 99 anos</option>
                     <option value="+ 99 anos">+ 99 anos</option>
                 </select>
-                <label for="genero" onChange={onChangeForm} required>Gênero</label>
+                <p>Gênero</p>
                 <section>
-                    <input name="genero" type='checkbox' value="Masculino" onChange={onChangeForm}  /> Masculino
-                    <input name="genero" type='checkbox' value="Feminino" onChange={onChangeForm}  /> Feminino
-                    <input name="genero" type='checkbox' value="outro" onChange={onChangeForm}  /> Outros
+                    <input name="genero" type='checkbox' value="Masculino" onChange={onChangeForm} /> Masculino
+                    <input name="genero" type='checkbox' value="Feminino" onChange={onChangeForm} /> Feminino
+                    <input name="genero" type='checkbox' value="outro" onChange={onChangeForm} /> Outros
                 </section>
-                <label for="etnia">Etnia</label>
+                <p>Etnia</p>
                 <input name="etnia" value={form.etnia} onChange={onChangeForm} required />
             </div>
-            <label for="bairro">Bairro</label>
+            <p>Bairro</p>
             <input name="bairro" value={form.bairro} onChange={onChangeForm} required />
-            <label for="cidade">Data do teste</label>
+            <p>Cidade</p>
             <input name="cidade" value={form.cidade} onChange={onChangeForm} required />
-            <label for="centroDeSaude">Centro de Saúde</label>
+            <p>Centro de Saúde</p>
             <input name="centroDeSaude" value={form.centroDeSaude} onChange={onChangeForm} required />
-            <label for="tipoTeste">Data do teste</label>
+            <p>Data do teste</p>
             <select name="tipoTeste" value={form.tipoTeste} >
                 <option value="RT-PCR">RT-PCR</option>
                 <option value="Sorológico" >Sorológico</option>
                 <option value="teste rápido" >Teste Rápido</option>
             </select>
-            <label >Sintomas: </label>
+            <p>Sintomas: </p>
             <section>
-                <input name="dorGarganta" type='checkbox' value="Sim" onChange={onChangeForm}  /> Dor de Garganta
+                <input name="dorGarganta" type='checkbox' value="Sim" onChange={onChangeForm} /> Dor de Garganta
             </section>
             <section>
-                <input name="dispneia" type='checkbox' value="Sim" onChange={onChangeForm}  /> Dispnéia
+                <input name="dispneia" type='checkbox' value="Sim" onChange={onChangeForm} /> Dispnéia
             </section>
             <section>
-                <input name="febre" type='checkbox' value="Sim" onChange={onChangeForm}  /> Febre
+                <input name="febre" type='checkbox' value="Sim" onChange={onChangeForm} /> Febre
             </section>
             <section>
-                <input name="tosse" type='checkbox' value="Sim" onChange={onChangeForm}  /> Tosse
+                <input name="tosse" type='checkbox' value="Sim" onChange={onChangeForm} /> Tosse
             </section>
-            <label >internação: </label>
+            <p>internação: </p>
             <section>
-                <input name="uti" type='checkbox' value="Sim" onChange={onChangeForm}  /> UTI
+                <input name="uti" type='checkbox' value="Sim" onChange={onChangeForm} /> UTI
             </section>
             <button>Enviar</button>
         </Formulario>
