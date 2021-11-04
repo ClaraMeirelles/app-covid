@@ -1,6 +1,7 @@
 import { useForm, onChangeForm, clearInputs } from "../../hooks/useForm";
+import { BASE_URL } from "../../Utils/BASE_URL";
 import { Formulario } from "./styled";
-
+import axios from 'axios'
 export default function FormularioCadastro() {
     const { form, onChangeForm, clearInputs } = useForm({
         dataNotificacao: "",
@@ -25,20 +26,20 @@ export default function FormularioCadastro() {
     const enviarDados = (e) => {
         e.preventDefault();
         console.log(form)
-        // axios
-        //   .post(`${BASE_URL}/signup`, form)
-        //   .then((response) => {
-        //     localStorage.setItem("token", response.data.token);
-        //     clearInputs();
-        //     goToAddressPage(history);
-        //   })
-        //   .catch((err) => {
-        //     Swal.fire({
-        //       icon: 'error',
-        //       title: 'Oops...',
-        //       text: (err.response.data.message),
-        //     })
-        //   });
+        axios
+          .post(`${BASE_URL}/ocorrencias`, form)
+          .then((response) => {
+              console.log(response)
+            clearInputs();
+          })
+          .catch((err) => {
+            // Swal.fire({
+            //   icon: 'error',
+            //   title: 'Oops...',
+            //   text: (err.response.data.message),
+            // })
+            console.log(err)
+          });
     };
     return (
         <Formulario onSubmit={enviarDados}>
