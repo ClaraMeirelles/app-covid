@@ -1,0 +1,79 @@
+.forms-covid{
+    margin: auto;
+}
+.container-date {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-date > div {
+    display: flex;
+    height: 50px;
+    width: 350px;
+    margin: 10px;
+    align-items: baseline;
+}
+.container-date > div p {
+    height: 30px;
+    width: 140px;
+    font-size: 0.9rem;
+}
+
+.container-date > div > input, select, section {
+    height: 40px;
+    width: 180px;
+}
+.genero-forms {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.8rem;
+}
+.genero-forms > div{
+    margin: 3px;
+}
+.container-city {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-city > div {
+    display: flex;
+    height: 50px;
+    width: 350px;
+    margin: 10px;
+    align-items: baseline;
+}
+.container-city > div p {
+    height: 30px;
+    width: 140px;
+    font-size: 0.9rem;
+}
+.container-city > div > input, select, section {
+    height: 40px;
+    width: 180px;
+}
+.container-symptoms {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-symptoms > p, section {
+    margin: 5px;
+    width: 120px;
+}
+.contairner-inter{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.send-covid {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 10px auto 20px auto;
+    background-color: #165abfc0;
+}
+.send-covid:hover {
+    background-color: #165abf7c;
+}

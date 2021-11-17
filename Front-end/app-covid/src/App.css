@@ -1,0 +1,45 @@
+:root {
+    margin: 0;
+    
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 
+        100px
+        1fr
+        40px;
+    grid-template-areas: 
+        "logo logo"
+        "menu content"
+        "menu footer";
+    height: 100vh;
+}
+
+aside.logo{
+    grid-area: logo;
+}
+aside.menu-area{
+    grid-area: menu;
+}
+
+main.content {
+    grid-area: content;
+}
+
+aside.footer{
+    grid-area: footer;
+}
+@media(max-width: 576px) {
+    .main-content {
+        max-width: 300px;
+    }
+    .app {
+        grid-template-columns: 100px 1fr;
+    }
+    .aside.menu-area > nav > a{
+        font-size: 0.8rem;
+
+    }
+}

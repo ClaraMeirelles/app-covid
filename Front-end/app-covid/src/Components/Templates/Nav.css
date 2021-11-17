@@ -1,0 +1,31 @@
+.menu-area {
+    background-color: #165abfc0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.menu i {
+    padding-right: 10px;
+}
+
+@media(max-width: 576px) {
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .menu i {
+        display: none;
+    }
+}
