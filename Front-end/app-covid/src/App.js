@@ -9,7 +9,7 @@ import Footer from "./Components/Templates/Footer";
 
 
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import Main from './Components/Templates/Main';
 
